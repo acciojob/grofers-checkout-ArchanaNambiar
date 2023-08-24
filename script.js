@@ -15,6 +15,7 @@ const getSum = () => {
 };
 
 const getSumBtn = document.createElement("button");
+getSumBtn.id = 'ans';
 getSumBtn.textContent = "Calculate Total";
 getSumBtn.addEventListener("click", getSum);
 
