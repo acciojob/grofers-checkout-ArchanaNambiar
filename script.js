@@ -8,6 +8,7 @@ const getSum = () => {
       totalPrice += price;
     }
   });
+	
 
   const table = document.querySelector("table");
   const newRow = table.insertRow(table.rows.length);
@@ -16,7 +17,7 @@ const getSum = () => {
 
 const getSumBtn = document.createElement("button");
 getSumBtn.id = 'ans';
-getSumBtn.textContent = "Calculate Total";
+getSumBtn.innerHTML = "Calculate Total";
 getSumBtn.addEventListener("click", getSum);
 
 document.body.appendChild(getSumBtn);
