@@ -1,3 +1,4 @@
+// Add this script to your script.js file
 const getSum = () => {
   const priceElements = document.querySelectorAll(".price");
   let totalPrice = 0;
@@ -8,7 +9,6 @@ const getSum = () => {
       totalPrice += price;
     }
   });
-	
 
   const table = document.querySelector("table");
   const newRow = table.insertRow(table.rows.length);
